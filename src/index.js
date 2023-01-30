@@ -55,9 +55,11 @@ function populateList() {
 
     li.setAttribute('draggable', true);
     li.setAttribute('data-index', i);
-    li.innerHTML = `<span class="position">${
-      i + 1
-    }</span> <span class="person-name">${person}</span>`;
+
+    li.innerHTML = `
+      <span class="position">${i + 1}</span>
+      <span class="person-name">${person}</span>
+    `;
 
     li.addEventListener('dragstart', onDragStart);
     li.addEventListener('dragenter', onDragEnter);

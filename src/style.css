@@ -35,6 +35,11 @@ li {
   border: 1px solid var(--border-color);
 }
 
+li span:first-of-type {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
 .dragging {
   opacity: 0.5;
   background-color: aquamarine;
